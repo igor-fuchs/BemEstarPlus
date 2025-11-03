@@ -1,89 +1,36 @@
-# React + TypeScript + Vite
+# 🌿 BemEstarPlus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BemEstarPlus é um aplicativo híbrido desenvolvido como parte da **Atividade Extensionista da Faculdade**, com o objetivo de **promover o autocuidado e o bem-estar emocional através da literatura, mensagens motivacionais e reflexões diárias**.  
 
-Currently, two official plugins are available:
+Construído com **React**, **Vite** e **Capacitor**, o projeto combina a rapidez de uma aplicação web moderna com os recursos nativos de dispositivos móveis, tornando possível rodar o app tanto em **navegadores**, quanto em **Android** e **iOS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Objetivos do projeto
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Incentivar o **autocuidado** e o **desenvolvimento pessoal**  
+- Oferecer **mensagens motivacionais diárias** e **frases literárias inspiradoras**  
+- Criar uma interface simples, leve e acessível a diferentes públicos  
+- Unir **tecnologia e saúde mental** em uma aplicação prática e educativa  
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tecnologias utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Tecnologia | Descrição |
+|-------------|------------|
+| ⚛️ **React** | Biblioteca JavaScript para criação de interfaces de usuário |
+| ⚡ **Vite** | Ferramenta moderna de build e desenvolvimento rápido |
+| 📱 **Capacitor** | Permite rodar o app em Android, iOS e Web |
+| 🎨 **Tailwind CSS** *(opcional)* | Estilização rápida e responsiva |
+| 🧠 **TypeScript** *(opcional)* | Tipagem estática para maior segurança no código |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧰 Pré-requisitos
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-integrar o capacitor no projeto
-
-Para gerar o apk é necessário baixar o java 21 e configurar algumas variavéis de ambientes.
-
-No cmd dentro da pasta android:
-gradlew assembleDebug
-
-Path do APK:
-..\BemEstarPlus\android\app\build\outputs\apk\debug\app-debug.apk
-
-
-
-formulário:
-https://forms.gle/Fs9giGo5dqZJmFkUA
+- Node.js 18+  
+- npm ou yarn  
+- Capacitor CLI instalada globalmente:  
+  ```bash
+  npm install -g @capacitor/cli
