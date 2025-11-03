@@ -30,7 +30,11 @@ Construído com **React**, **Vite** e **Capacitor**, o projeto combina a rapidez
 ## 🧰 Pré-requisitos
 
 - Node.js 18+  
-- npm ou yarn  
-- Capacitor CLI instalada globalmente:  
+- JDK 21
+- npm ou yarn
+- É necessário a configuração de algumas variavéis de ambiente para a instalção, ao rodar o comando abaixo, basta seguir as instruções após o erro.
+
+## Gerando APK
+- Utilize o comando abaixo para gerar o APK, após isso o arquivo com nome "app-debug.apk" será gerado no folder "..\BemEstarPlus\android\app\build\outputs\apk\debug":  
   ```bash
-  npm install -g @capacitor/cli
+  npm run sync
